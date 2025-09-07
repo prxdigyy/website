@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Solar System</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #000011, #001133);
+      color: #fff;
+    }
+    header {
+      background: #111144;
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+    }
+    h2 {
+      border-bottom: 2px solid #fff;
+      padding-bottom: 0.3rem;
+    }
+    .planet {
+      margin: 1.5rem 0;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      color: white;
+    }
+    .planet img {
+      max-width: 150px;
+      display: block;
+      margin-top: 0.5rem;
+      border-radius: 8px;
+    }
+    footer {
+      background: #111144;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .button-card {
+      background: #222266;
+      border: 2px solid #555;
+      border-radius: 10px;
+      padding: 20px;
+      width: 200px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .button-card:hover{
+      border-color: #02374a;
+      transform: scale(1.05);
+    }
+    .sun-image-container {
+      width: 100vw;
+      overflow: hidden;
+    }
+
+    .sun-image-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      color: white;
+    }
+    li {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      color: white;
+    }
+    .hero {
+      position: relative;
+      width: 100vw;
+      overflow: hidden;
+    }
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .hero-text {
+      position: fixed;
+      top: 31%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1);
+      font-size: 3rem;
+      font-weight: bold;
+      color: white;
+      text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+      text-align: center;
+      z-index: 1100;
+    }
+    #main-header {
+      background: #111144;
+      padding: 1rem;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      transition: none;
+      z-index: 1000;
+    }
+    #main-header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <img src="https://primaryscienceonline.org.uk/wp-content/uploads/2019/04/solar_system_1556032297.jpg" alt="The Sun">
+    <div class="hero-text">The Solar System</div>
+  </div>
+
+  <header id="main-header">
+    <h1>The Solar System</h1>
+  </header>
+
+  <div class="container">
+    <section id="sun">
+      <h2>The Sun</h2>
+      <p>The solar system is a vast collection of celestial objects held together by the Sun’s gravity. At its center is the Sun, a giant ball of hot plasma that provides the light and warmth necessary for life on Earth. Without it, our planet could not support the ecosystems we depend on. Orbiting the Sun are eight planets: the rocky inner worlds Mercury, Venus, Earth, and Mars, and the gas and ice giants Jupiter, Saturn, Uranus, and Neptune. Alongside these planets are moons, dwarf planets like Pluto, asteroids, comets, and countless smaller objects. Beyond Neptune lie the Kuiper Belt and the distant Oort Cloud, regions filled with icy bodies. Altogether, the solar system spans billions of miles, and studying it helps us better understand Earth’s place in space and the origins of planets and stars throughout the universe.</p>
+    </section>
+
+    <section id="planets">
+      <h2>The Planets</h2>
+      <div class="planet"><strong>Mercury:</strong> The closest planet to the Sun, very hot during the day and freezing at night.
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg" alt="Mercury">
+      </div>
+      <div class="planet"><strong>Venus:</strong> Known as Earth's twin because of its similar size, but has a thick atmosphere that traps heat.
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg" alt="Venus">
+      </div>
+      <div class="planet"><strong>Earth:</strong> Our home planet, the only one known to support life.
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg" alt="Earth">
+      </div>
+      <div class="planet"><strong>Mars:</strong> The Red Planet, known for its giant volcanoes and potential for past water.
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="Mars">
+      </div>
+      <div class="planet"><strong>Jupiter:</strong> The largest planet, famous for its Great Red Spot storm.
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg" alt="Jupiter">
+      </div>
+      <div class="planet"><strong>Saturn:</strong> Surrounded by beautiful rings made of ice and rock.
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg" alt="Saturn">
+      </div>
+      <div class="planet"><strong>Uranus:</strong> A tilted planet that rotates on its side with a bluish color.
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg" alt="Uranus">
+      </div>
+      <div class="planet"><strong>Neptune:</strong> The farthest planet, deep blue in color and very windy.
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Full.jpg" alt="Neptune">
+      </div>
+    </section>
+
+    <section id="moons">
+      <h2>Moons</h2>
+      <p>Many planets have moons. Earth has one moon, while Jupiter has over 90! Some moons, like Europa (Jupiter) and Enceladus (Saturn), may even have oceans under their icy surfaces.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/330px-FullMoon2010.jpg" alt="Earth's Moon">
+    </section>
+
+    <section id="funfacts">
+      <h2>Fun Facts</h2>
+      <ul>
+        <li>The Solar System formed about 4.6 billion years ago.</li>
+        <li>Pluto used to be the ninth planet but is now classified as a dwarf planet.</li>
+        <li>Saturn could float in water because it’s mostly made of gas and is very light for its size.</li>
+        <li>The Sun contains 99.8% of the solar system’s mass – everything else (planets, moons, asteroids, comets) makes up only a tiny fraction.</li>
+        <li>Jupiter is so massive it could fit all the other planets inside it and still have room left over.</li>
+        <li>Saturn could float on water because it’s less dense than water.</li>
+        <li>Venus is hotter than Mercury, even though Mercury is closer to the Sun, because Venus has a thick atmosphere that traps heat.</li>
+        <li>Olympus Mons on Mars is the tallest volcano in the solar system—about three times the height of Mount Everest.</li>
+        <li>Neptune has the strongest winds in the solar system, with speeds over 1,200 mph (2,000 km/h).</li>
+        <li>The asteroid belt between Mars and Jupiter isn’t as crowded as movies suggest—if you flew through it, you’d probably never hit anything.</li>
+      </ul>
+    </section>
+
+    <section id="videos">
+    <h1>Videos about the Solar System</h1>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px;">
+      <iframe 
+        src="https://www.youtube.com/embed/libKVRa01L8" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+      </iframe>
+    </div>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px;">
+      <iframe 
+        src="https://www.youtube.com/embed/zR3Igc3Rhfg" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+      </iframe>
+    </div>
+    </section>
+
+    <section id="otherwebsites">
+    <h1>Other websites for information</h1>
+    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+      <div class="button-card" onclick="window.location.href='https://en.wikipedia.org/wiki/Solar_System'">
+        Solar System - Wikipedia
+      </div>
+    <div class="button-card" onclick="window.open('https://science.nasa.gov/solar-system/#:~:text=Our%20solar%20system%20includes%20the,arms%2C%20and%20two%20minor%20arms.', '_blank')">
+        Solar System Exploration - NASA
+    </div>   
+    </section>
+  </div> 
+
+<script>
+  window.addEventListener("scroll", function() {
+    const header = document.getElementById("main-header");
+    const heroText = document.querySelector(".hero-text");
+
+    const scrollY = window.scrollY;
+    const moveStart = 0;
+    const moveEnd = 300;
+
+    let progress = (scrollY - moveStart) / (moveEnd - moveStart);
+    progress = Math.min(Math.max(progress, 0), 1);
+
+    header.style.opacity = progress;
+
+    const startY = 31;
+    const endY = 3.5;
+    const currentY = startY - (progress * (startY - endY));
+
+    const startScale = 1;
+    const endScale = 0.8;
+    const scale = startScale - (progress * (startScale - endScale));
+
+    heroText.style.top = currentY + "%";
+    heroText.style.transform = `translate(-50%, -50%) scale(${scale})`;
+  });
+</script>              
+</body>
+</html>
